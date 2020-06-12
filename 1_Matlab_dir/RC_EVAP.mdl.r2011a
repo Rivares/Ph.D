@@ -1,0 +1,2640 @@
+Model {
+  Name			  "Isparitel_teplo_2"
+  Version		  7.7
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.118"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1251"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "Isparitel_teplo_2"
+      PropName		      "mdlProps"
+    }
+  }
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Sat May 18 11:25:48 2013"
+  Creator		  "Natalia"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Natalia"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Mar 15 22:23:09 2016"
+  RTWModifiedTimeStamp	  379981135
+  ModelVersionFormat	  "1.%<AutoIncrement:118>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovHTMLOptions	  " -aTS=1 -bRG=1 -bTC=1 -hTR=0 -nFC=0 -scm=1 -bcm=1 -xEv=0"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      2
+      Version		      "1.11.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  3
+	  Version		  "1.11.0"
+	  StartTime		  "0.0"
+	  StopTime		  "30000"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.1"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  ConcurrentTasks	  off
+	  Solver		  "ode3"
+	  SolverName		  "ode3"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  4
+	  Version		  "1.11.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  5
+	  Version		  "1.11.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  AccelParallelForEachSubsystem	on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  6
+	  Version		  "1.11.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  7
+	  Version		  "1.11.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  8
+	  Version		  "1.11.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  9
+	  Version		  "1.11.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  10
+	  Version		  "1.11.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  GenerateCodeMetricsReport off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      11
+	      Version		      "1.11.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      12
+	      Version		      "1.11.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      FunctionExecutionProfile off
+	      CodeExecutionProfiling  off
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  13
+	  Version		  "1.11.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 155, 23, 1035, 653 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    2
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      RateLimiter
+      RisingSlewLimit	      "1"
+      FallingSlewLimit	      "-1"
+      SampleTimeMode	      "continuous"
+      InitialCondition	      "0"
+      LinearizeAsGain	      on
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+      NumInputs		      "1"
+    }
+  }
+  System {
+    Name		    "Isparitel_teplo_2"
+    Location		    [2, 72, 1918, 1029]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "170"
+    Block {
+      BlockType		      RateLimiter
+      Name		      "%/c"
+      SID		      "115"
+      Position		      [475, 600, 505, 630]
+      BackgroundColor	      "[0.250980, 0.501961, 0.501961]"
+      RisingSlewLimit	      "5"
+      FallingSlewLimit	      "-5"
+      SampleTimeMode	      "inherited"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      SID		      "170"
+      Ports		      [1]
+      Position		      [580, 535, 670, 565]
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Kdta,\nmA/C"
+      SID		      "59"
+      Position		      [100, 595, 130, 625]
+      BackgroundColor	      "lightBlue"
+      Gain		      "0.08"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Kpi"
+      SID		      "133"
+      Position		      [275, 585, 305, 615]
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Kro"
+      SID		      "117"
+      Position		      [525, 600, 555, 630]
+      BackgroundColor	      "[0.250980, 0.501961, 0.501961]"
+      Gain		      "0.006"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Kzd, \nmA/C"
+      SID		      "81"
+      Position		      [190, 570, 220, 600]
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      Gain		      "0.08"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Ra1"
+      SID		      "18"
+      Position		      [670, 325, 700, 355]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      NamePlacement	      "alternate"
+      Gain		      "0.003"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Ra2"
+      SID		      "19"
+      Position		      [500, 325, 530, 355]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      NamePlacement	      "alternate"
+      Gain		      "0.003"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Ra3"
+      SID		      "20"
+      Position		      [335, 325, 365, 355]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      NamePlacement	      "alternate"
+      Gain		      "0.003"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Ra4"
+      SID		      "21"
+      Position		      [165, 325, 195, 355]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      NamePlacement	      "alternate"
+      Gain		      "0.003"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rast1"
+      SID		      "22"
+      Position		      [540, 315, 570, 345]
+      BlockRotation	      270
+      BackgroundColor	      "gray"
+      Gain		      "0.22"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rast2"
+      SID		      "23"
+      Position		      [390, 315, 420, 345]
+      BlockRotation	      270
+      BackgroundColor	      "gray"
+      Gain		      "0.22"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rast3"
+      SID		      "24"
+      Position		      [240, 315, 270, 345]
+      BlockRotation	      270
+      BackgroundColor	      "gray"
+      Gain		      "0.22"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rast4"
+      SID		      "25"
+      Position		      [65, 315, 95, 345]
+      BlockRotation	      270
+      BackgroundColor	      "gray"
+      Gain		      "0.22"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdg1"
+      SID		      "6"
+      Position		      [165, 140, 195, 170]
+      BlockRotation	      270
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Gain		      "0.47"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdg2"
+      SID		      "7"
+      Position		      [335, 140, 365, 170]
+      BlockRotation	      270
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Gain		      "0.47"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdg3"
+      SID		      "8"
+      Position		      [500, 140, 530, 170]
+      BlockRotation	      270
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Gain		      "0.47"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdg4"
+      SID		      "9"
+      Position		      [670, 140, 700, 170]
+      BlockRotation	      270
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Gain		      "0.47"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdgst1"
+      SID		      "10"
+      Position		      [235, 140, 265, 170]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Gain		      "0.008"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdgst1+Rast1"
+      SID		      "11"
+      Position		      [135, 270, 165, 300]
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      Gain		      "0.008+0.22"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdgst2"
+      SID		      "12"
+      Position		      [405, 140, 435, 170]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Gain		      "0.008"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdgst2+Rast2"
+      SID		      "13"
+      Position		      [305, 270, 335, 300]
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      Gain		      "0.008+0.22"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdgst3"
+      SID		      "14"
+      Position		      [570, 140, 600, 170]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Gain		      "0.008"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdgst3+Rast3"
+      SID		      "15"
+      Position		      [470, 270, 500, 300]
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      Gain		      "0.008+0.22"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdgst4"
+      SID		      "16"
+      Position		      [740, 140, 770, 170]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Gain		      "0.008"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Rdgst4+Rast4"
+      SID		      "17"
+      Position		      [640, 270, 670, 300]
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      Gain		      "0.008+0.22"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      SID		      "97"
+      Position		      [720, 390, 750, 420]
+      BlockMirror	      on
+      Time		      "0"
+      Before		      "139"
+      After		      "130"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      SID		      "26"
+      Ports		      [3, 1]
+      Position		      [170, 105, 190, 125]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "-++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      SID		      "27"
+      Ports		      [3, 1]
+      Position		      [340, 105, 360, 125]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "-++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum10"
+      SID		      "28"
+      Ports		      [3, 1]
+      Position		      [315, 395, 335, 415]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum11"
+      SID		      "29"
+      Ports		      [3, 1]
+      Position		      [170, 395, 190, 415]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum12"
+      SID		      "30"
+      Ports		      [2, 1]
+      Position		      [240, 570, 255, 625]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum14"
+      SID		      "131"
+      Ports		      [2, 1]
+      Position		      [385, 586, 400, 639]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      SID		      "32"
+      Ports		      [3, 1]
+      Position		      [505, 105, 525, 125]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "-++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      SID		      "33"
+      Ports		      [3, 1]
+      Position		      [675, 105, 695, 125]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "-++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum4"
+      SID		      "34"
+      Ports		      [3, 1]
+      Position		      [100, 230, 120, 250]
+      BackgroundColor	      "gray"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum5"
+      SID		      "35"
+      Ports		      [3, 1]
+      Position		      [270, 230, 290, 250]
+      BackgroundColor	      "gray"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum6"
+      SID		      "36"
+      Ports		      [3, 1]
+      Position		      [435, 230, 455, 250]
+      BackgroundColor	      "gray"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum7"
+      SID		      "37"
+      Ports		      [3, 1]
+      Position		      [605, 230, 625, 250]
+      BackgroundColor	      "gray"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum8"
+      SID		      "38"
+      Ports		      [3, 1]
+      Position		      [615, 395, 635, 415]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum9"
+      SID		      "39"
+      Ports		      [3, 1]
+      Position		      [465, 395, 485, 415]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Ta-t"
+      SID		      "47"
+      Ports		      [4]
+      Position		      [805, 484, 835, 516]
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      NamePlacement	      "alternate"
+      Floating		      off
+      Location		      [722, 92, 1046, 596]
+      Open		      off
+      NumInputPorts	      "4"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+	axes4			"%<SignalLabel>"
+      }
+      YMin		      "-5~-5~100~100"
+      YMax		      "5~5~165~165"
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Ta0, C"
+      SID		      "158"
+      Position		      [780, 325, 810, 355]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      NamePlacement	      "alternate"
+      Value		      "139"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Ta1"
+      SID		      "49"
+      Ports		      [1, 1]
+      Position		      [570, 390, 600, 420]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      InitialCondition	      "143.6734047836856"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Ta2"
+      SID		      "50"
+      Ports		      [1, 1]
+      Position		      [420, 390, 450, 420]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      InitialCondition	      "148.7360828464904"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Ta3"
+      SID		      "51"
+      Ports		      [1, 1]
+      Position		      [270, 390, 300, 420]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      InitialCondition	      "154.2204588750979"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Ta4"
+      SID		      "52"
+      Ports		      [1, 1]
+      Position		      [125, 390, 155, 420]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      InitialCondition	      "160.1616583845354"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Tdg-t"
+      SID		      "41"
+      Ports		      [4]
+      Position		      [805, 14, 835, 46]
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [24, 92, 348, 596]
+      Open		      off
+      NumInputPorts	      "4"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+	axes4			"%<SignalLabel>"
+      }
+      YMin		      "-5~-5~-5~-5"
+      YMax		      "5~5~5~5"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Tdg1"
+      SID		      "43"
+      Ports		      [1, 1]
+      Position		      [205, 100, 235, 130]
+      BackgroundColor	      "yellow"
+      InitialCondition	      "283.3065209436467"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Tdg2"
+      SID		      "44"
+      Ports		      [1, 1]
+      Position		      [375, 100, 405, 130]
+      BackgroundColor	      "yellow"
+      InitialCondition	      "267.8966165589237"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Tdg3"
+      SID		      "45"
+      Ports		      [1, 1]
+      Position		      [540, 100, 570, 130]
+      BackgroundColor	      "yellow"
+      InitialCondition	      "253.6715917846216"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Tdg4"
+      SID		      "46"
+      Ports		      [1, 1]
+      Position		      [710, 100, 740, 130]
+      BackgroundColor	      "yellow"
+      InitialCondition	      "240.5403403000344"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Ti"
+      SID		      "141"
+      Ports		      [1, 1]
+      Position		      [335, 610, 365, 640]
+      BackgroundColor	      "lightBlue"
+      InitialCondition	      "8000"
+      UpperSaturationLimit    "8012"
+      LowerSaturationLimit    "6012"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      SID		      "110"
+      Ports		      [1]
+      Position		      [595, 600, 655, 630]
+      VariableName	      "Tdg0"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      SID		      "111"
+      Ports		      [1]
+      Position		      [805, 565, 865, 595]
+      NamePlacement	      "alternate"
+      VariableName	      "Ta4"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace10"
+      SID		      "166"
+      Ports		      [1]
+      Position		      [935, 100, 995, 130]
+      VariableName	      "Tdg3"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace11"
+      SID		      "167"
+      Ports		      [1]
+      Position		      [1005, 80, 1065, 110]
+      VariableName	      "Tdg2"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace12"
+      SID		      "168"
+      Ports		      [1]
+      Position		      [1085, 60, 1145, 90]
+      VariableName	      "Tdg1"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      SID		      "112"
+      Ports		      [1]
+      Position		      [855, 285, 915, 315]
+      VariableName	      "Tst4"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      SID		      "113"
+      Ports		      [1]
+      Position		      [865, 125, 925, 155]
+      VariableName	      "Tdg4"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      SID		      "160"
+      Ports		      [1]
+      Position		      [915, 535, 975, 565]
+      VariableName	      "Ta3"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace5"
+      SID		      "161"
+      Ports		      [1]
+      Position		      [1020, 515, 1080, 545]
+      VariableName	      "Ta2"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace6"
+      SID		      "162"
+      Ports		      [1]
+      Position		      [890, 450, 950, 480]
+      NamePlacement	      "alternate"
+      VariableName	      "Ta1"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace7"
+      SID		      "163"
+      Ports		      [1]
+      Position		      [925, 265, 985, 295]
+      VariableName	      "Tst3"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace8"
+      SID		      "164"
+      Ports		      [1]
+      Position		      [1005, 245, 1065, 275]
+      VariableName	      "Tst2"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace9"
+      SID		      "165"
+      Ports		      [1]
+      Position		      [1085, 225, 1145, 255]
+      VariableName	      "Tst1"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Tst-t"
+      SID		      "54"
+      Ports		      [4]
+      Position		      [805, 194, 835, 226]
+      BackgroundColor	      "gray"
+      Floating		      off
+      Location		      [368, 90, 692, 594]
+      Open		      off
+      NumInputPorts	      "4"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+	axes4			"%<SignalLabel>"
+      }
+      YMin		      "-5~-5~-5~-5"
+      YMax		      "5~5~5~5"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Tst1"
+      SID		      "55"
+      Ports		      [1, 1]
+      Position		      [140, 225, 170, 255]
+      BackgroundColor	      "gray"
+      InitialCondition	      "164.4825307550351"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Tst2"
+      SID		      "56"
+      Ports		      [1, 1]
+      Position		      [305, 225, 335, 255]
+      BackgroundColor	      "gray"
+      InitialCondition	      "158.2090959868120"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Tst3"
+      SID		      "57"
+      Ports		      [1, 1]
+      Position		      [470, 225, 500, 255]
+      BackgroundColor	      "gray"
+      InitialCondition	      "152.4180305285302"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Tst4"
+      SID		      "58"
+      Ports		      [1, 1]
+      Position		      [645, 225, 675, 255]
+      BackgroundColor	      "gray"
+      InitialCondition	      "147.0722446263660"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Tz, C"
+      SID		      "40"
+      Position		      [135, 570, 165, 600]
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      Value		      "160.1616583845354"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "pozicioner,\n%/mA"
+      SID		      "116"
+      Position		      [425, 600, 455, 630]
+      BackgroundColor	      "[0.250980, 0.501961, 0.501961]"
+      Gain		      "6.25"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "va/h+Ra"
+      SID		      "71"
+      Position		      [570, 440, 600, 470]
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      Gain		      "0.003/1.375+0.003"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "va/h+Ra1"
+      SID		      "72"
+      Position		      [420, 440, 450, 470]
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      Gain		      "0.003/1.375+0.003"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "va/h+Ra2"
+      SID		      "73"
+      Position		      [270, 440, 300, 470]
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      Gain		      "0.003/1.375+0.003"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "va/h+Ra3"
+      SID		      "74"
+      Position		      [125, 440, 155, 470]
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      Gain		      "0.003/1.375+0.003"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "va/h1"
+      SID		      "75"
+      Position		      [650, 390, 680, 420]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      Gain		      "0.003/1.375"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "va/h3"
+      SID		      "77"
+      Position		      [350, 390, 380, 420]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      Gain		      "0.003/1.375"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "va/h4"
+      SID		      "78"
+      Position		      [205, 390, 235, 420]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      Gain		      "0.003/1.375"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vah2"
+      SID		      "76"
+      Position		      [500, 390, 530, 420]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      Gain		      "0.003/1.375"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vdg/h"
+      SID		      "63"
+      Position		      [120, 100, 150, 130]
+      BackgroundColor	      "yellow"
+      Gain		      "4.6/1.375"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vdg/h+Rdg"
+      SID		      "64"
+      Position		      [205, 60, 235, 90]
+      BlockMirror	      on
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Gain		      "4.6/1.375+0.47"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vdg/h+Rdg1"
+      SID		      "65"
+      Position		      [375, 60, 405, 90]
+      BlockMirror	      on
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Gain		      "4.6/1.375+0.47"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vdg/h+Rdg2"
+      SID		      "66"
+      Position		      [540, 60, 570, 90]
+      BlockMirror	      on
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Gain		      "4.6/1.375+0.47"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vdg/h+Rdg3"
+      SID		      "67"
+      Position		      [710, 60, 740, 90]
+      BlockMirror	      on
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      Gain		      "4.6/1.375+0.47"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vdg/h1"
+      SID		      "68"
+      Position		      [280, 100, 310, 130]
+      BackgroundColor	      "yellow"
+      Gain		      "4.6/1.375"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vdg/h2"
+      SID		      "69"
+      Position		      [445, 100, 475, 130]
+      BackgroundColor	      "yellow"
+      Gain		      "4.6/1.375"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "vdg/h3"
+      SID		      "70"
+      Position		      [615, 100, 645, 130]
+      BackgroundColor	      "yellow"
+      Gain		      "4.6/1.375"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Line {
+      SrcBlock		      "vdg/h"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "vdg/h+Rdg"
+      SrcPort		      1
+      Points		      [-20, 0]
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "Tdg1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tdg1"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"vdg/h+Rdg"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"vdg/h1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Rdgst1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -100; 535, 0]
+	Branch {
+	  DstBlock		  "Tdg-t"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 60]
+	  DstBlock		  "To Workspace12"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "vdg/h1"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "vdg/h+Rdg1"
+      SrcPort		      1
+      Points		      [-20, 0]
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "Tdg2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tdg2"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"vdg/h2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 0]
+	Branch {
+	  DstBlock		  "vdg/h+Rdg1"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Rdgst2"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -90; 360, 0]
+	  Branch {
+	    DstBlock		    "Tdg-t"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "To Workspace11"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "vdg/h2"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "vdg/h+Rdg2"
+      SrcPort		      1
+      Points		      [-20, 0]
+      DstBlock		      "Sum2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      DstBlock		      "Tdg3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tdg3"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"vdg/h+Rdg2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"vdg/h3"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Rdgst3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -80; 190, 0]
+	Branch {
+	  DstBlock		  "Tdg-t"
+	  DstPort		  3
+	}
+	Branch {
+	  Points		  [0, 80]
+	  DstBlock		  "To Workspace10"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "vdg/h3"
+      SrcPort		      1
+      DstBlock		      "Sum3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "vdg/h+Rdg3"
+      SrcPort		      1
+      Points		      [-20, 0]
+      DstBlock		      "Sum3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      DstBlock		      "Tdg4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tdg4"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"vdg/h+Rdg3"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Rdgst4"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -70; 10, 0]
+	Branch {
+	  DstBlock		  "Tdg-t"
+	  DstPort		  4
+	}
+	Branch {
+	  Points		  [0, 95]
+	  DstBlock		  "To Workspace3"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Rdg1"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Rdg2"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Rdg3"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Rdg4"
+      SrcPort		      1
+      DstBlock		      "Sum3"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Sum4"
+      SrcPort		      1
+      DstBlock		      "Tst1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum5"
+      SrcPort		      1
+      DstBlock		      "Tst2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum6"
+      SrcPort		      1
+      DstBlock		      "Tst3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum7"
+      SrcPort		      1
+      DstBlock		      "Tst4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tst4"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Rdgst4+Rast4"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Rdg4"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Ra1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -15; 50, 0]
+	Branch {
+	  DstBlock		  "Tst-t"
+	  DstPort		  4
+	}
+	Branch {
+	  Points		  [0, 75]
+	  DstBlock		  "To Workspace2"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Rdgst4+Rast4"
+      SrcPort		      1
+      Points		      [-20, 0]
+      DstBlock		      "Sum7"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Tst3"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[0, 0]
+	Branch {
+	  DstBlock		  "Rdgst3+Rast3"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Rdg3"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Ra2"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[0, -25; 235, 0]
+	Branch {
+	  DstBlock		  "Tst-t"
+	  DstPort		  3
+	}
+	Branch {
+	  Points		  [0, 65]
+	  DstBlock		  "To Workspace7"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Rdgst3+Rast3"
+      SrcPort		      1
+      Points		      [-20, 0]
+      DstBlock		      "Sum6"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Tst2"
+      SrcPort		      1
+      Points		      [25, 0; 0, -25; -15, 0; 0, 25]
+      Branch {
+	DstBlock		"Rdgst2+Rast2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Rdg2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Ra3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -35; 420, 0]
+	Branch {
+	  DstBlock		  "Tst-t"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 55]
+	  DstBlock		  "To Workspace8"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Tst1"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	Points			[0, 0]
+	Branch {
+	  DstBlock		  "Rdgst1+Rast1"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Rdg1"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Ra4"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[0, -45; 600, 0]
+	Branch {
+	  DstBlock		  "Tst-t"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 45]
+	  DstBlock		  "To Workspace9"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Rdgst1+Rast1"
+      SrcPort		      1
+      Points		      [-20, 0]
+      DstBlock		      "Sum4"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Rdgst1"
+      SrcPort		      1
+      Points		      [0, 10; -140, 0]
+      DstBlock		      "Sum4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rdgst2"
+      SrcPort		      1
+      Points		      [0, 10; -140, 0]
+      DstBlock		      "Sum5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rdgst3"
+      SrcPort		      1
+      Points		      [0, 10; -140, 0]
+      DstBlock		      "Sum6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rdgst4"
+      SrcPort		      1
+      Points		      [0, 10; -140, 0]
+      DstBlock		      "Sum7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rdgst2+Rast2"
+      SrcPort		      1
+      Points		      [-20, 0]
+      DstBlock		      "Sum5"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "va/h1"
+      SrcPort		      1
+      DstBlock		      "Sum8"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "va/h+Ra"
+      SrcPort		      1
+      Points		      [20, 0]
+      DstBlock		      "Sum8"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Sum8"
+      SrcPort		      1
+      DstBlock		      "Ta1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ta1"
+      SrcPort		      1
+      Points		      [-10, 0]
+      Branch {
+	DstBlock		"va/h+Ra"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 0]
+	Branch {
+	  DstBlock		  "vah2"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 0]
+	  Branch {
+	    DstBlock		    "Rast1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 80; 215, 0]
+	    Branch {
+	      DstBlock		      "Ta-t"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -20]
+	      DstBlock		      "To Workspace6"
+	      DstPort		      1
+	    }
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "vah2"
+      SrcPort		      1
+      DstBlock		      "Sum9"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "va/h+Ra1"
+      SrcPort		      1
+      Points		      [20, 0]
+      DstBlock		      "Sum9"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Sum9"
+      SrcPort		      1
+      DstBlock		      "Ta2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ta2"
+      SrcPort		      1
+      Points		      [-10, 0]
+      Branch {
+	DstBlock		"va/h+Ra1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"va/h3"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Rast2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 90; 365, 0]
+	Branch {
+	  DstBlock		  "Ta-t"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 35]
+	  DstBlock		  "To Workspace5"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "va/h3"
+      SrcPort		      1
+      DstBlock		      "Sum10"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "va/h+Ra2"
+      SrcPort		      1
+      Points		      [20, 0]
+      DstBlock		      "Sum10"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Sum10"
+      SrcPort		      1
+      DstBlock		      "Ta3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ta3"
+      SrcPort		      1
+      Points		      [-10, 0]
+      Branch {
+	DstBlock		"va/h+Ra2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"va/h4"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Rast3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 100; 495, 0]
+	Branch {
+	  DstBlock		  "Ta-t"
+	  DstPort		  3
+	}
+	Branch {
+	  Points		  [0, 45]
+	  DstBlock		  "To Workspace4"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "va/h4"
+      SrcPort		      1
+      DstBlock		      "Sum11"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "va/h+Ra3"
+      SrcPort		      1
+      Points		      [20, 0]
+      DstBlock		      "Sum11"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Sum11"
+      SrcPort		      1
+      DstBlock		      "Ta4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ta4"
+      SrcPort		      1
+      Points		      [-40, 0]
+      Branch {
+	Points			[0, 50]
+	DstBlock		"va/h+Ra3"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Rast4"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 110]
+	Branch {
+	  Points		  [0, 95]
+	  DstBlock		  "Kdta,\nmA/C"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [660, 0]
+	  Branch {
+	    DstBlock		    "Ta-t"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "To Workspace1"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Rast4"
+      SrcPort		      1
+      Points		      [0, -70]
+      DstBlock		      "Sum4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Ra4"
+      SrcPort		      1
+      DstBlock		      "Sum11"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rast3"
+      SrcPort		      1
+      DstBlock		      "Sum5"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Ra3"
+      SrcPort		      1
+      Points		      [0, 20]
+      DstBlock		      "Sum10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rast2"
+      SrcPort		      1
+      Points		      [0, -70]
+      DstBlock		      "Sum6"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Ra2"
+      SrcPort		      1
+      Points		      [0, 20]
+      DstBlock		      "Sum9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rast1"
+      SrcPort		      1
+      Points		      [0, -70]
+      DstBlock		      "Sum7"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Ra1"
+      SrcPort		      1
+      Points		      [0, 20]
+      DstBlock		      "Sum8"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tz, C"
+      SrcPort		      1
+      DstBlock		      "Kzd, \nmA/C"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Kdta,\nmA/C"
+      SrcPort		      1
+      DstBlock		      "Sum12"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Kzd, \nmA/C"
+      SrcPort		      1
+      DstBlock		      "Sum12"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Kro"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	Points			[10, 0]
+	Branch {
+	  DstBlock		  "To Workspace"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 45; -525, 0; 0, -545]
+	  DstBlock		  "vdg/h"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"Display"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "pozicioner,\n%/mA"
+      SrcPort		      1
+      DstBlock		      "%/c"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "%/c"
+      SrcPort		      1
+      DstBlock		      "Kro"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum14"
+      SrcPort		      1
+      DstBlock		      "pozicioner,\n%/mA"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum12"
+      SrcPort		      1
+      DstBlock		      "Kpi"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ti"
+      SrcPort		      1
+      DstBlock		      "Sum14"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Kpi"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"Sum14"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Ti"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Step"
+      SrcPort		      1
+      DstBlock		      "va/h1"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [825, 506]
+    }
+  }
+}

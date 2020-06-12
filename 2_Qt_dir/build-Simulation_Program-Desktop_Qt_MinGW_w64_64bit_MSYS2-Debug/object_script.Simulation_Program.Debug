@@ -1,0 +1,12 @@
+debug/main.o
+debug/mainwindow.o
+debug/qcustomplot.o
+debug/checkwindow.o
+debug/logger.o
+debug/choicetrend.o
+debug/initlayer.o
+debug/models.o
+debug/moc_mainwindow.o
+debug/moc_qcustomplot.o
+debug/moc_checkwindow.o
+debug/moc_choicetrend.o

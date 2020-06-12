@@ -1,0 +1,15 @@
+﻿input u;
+output y;
+
+var a:double = 10.0,
+		b:double = 500.0;
+
+if u > b then y = b	
+else
+	begin
+		if u < (-b) then y = -b
+		else
+			begin
+				if u <= b then y = u * tg(a)
+			end;
+	end;

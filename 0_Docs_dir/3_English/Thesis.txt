@@ -1,0 +1,16 @@
+я хочу спросить у вас. У какой компании следующий девиз - мечты сбываются?
+Вы правы, это Газпром. Газпром это миллиардная компания, которая добывает, перерабатывает и транспортирует природный газ из вечной мерзлоты к вам на кухню. Я надеюсь, все понимают, что это очень сложная технологическая система, которая состоит из других сложных подсистем. Одной из таких подсистем является подсистема подготовки природного газа к транспортировке. Данная подсистема включает в себя такой аппарат как ректификационная колонна.
+
+
+
+
+В заключении хочу повторить ключевые осбенности разработанного программного модуля:
+меньше затрачивается времени на моделировании данных технологических процессов, программноый модуль узкоспециализирован на решении конкретных задач, гибкость и открытость программного модуля.
+
+/////////////////////////////////////////////////////////////////////////////
+
+I want to ask you. Which company has the next motto - dreams come true?
+You are right, this is Gazprom. Gazprom is a billion-dollar company that extracts, processes and transports natural gas from the permafrost to your kitchen. I hope everyone understands that this is a very complex technological system, which consists of other complex subsystems. One of such subsystems is the subsystem of natural gas preparation for transportation. This subsystem includes such a device as a distillation column.
+
+In conclusion, I want to repeat the key features of the developed program module:
+less time is spent on modeling these technological processes, the software module is highly specialized in solving specific tasks, flexibility, and openness of the software module.

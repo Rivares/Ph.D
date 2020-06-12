@@ -1,0 +1,12 @@
+release/main.o
+release/mainwindow.o
+release/qcustomplot.o
+release/checkwindow.o
+release/logger.o
+release/choicetrend.o
+release/initlayer.o
+release/models.o
+release/moc_mainwindow.o
+release/moc_qcustomplot.o
+release/moc_checkwindow.o
+release/moc_choicetrend.o

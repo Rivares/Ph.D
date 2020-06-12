@@ -1,0 +1,408 @@
+/* выбираем все элементы и их псевдоэлементы*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    /* padding и  border более не влияют на ширину элемента*/
+}
+
+body {
+    font: 13px/1.8 Arial, sans-serif;
+    color: #000;
+    background: rgb(221,208,181);
+}
+
+.welcome {
+    padding: 0;
+    margin: 0;
+    background: url(../img/bg.jpg) center/cover;
+    width: 100%;
+    height: 1100px;
+}
+
+.welcome1 {
+    background: rgb(126,108,84);
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.welcome1 .logo {
+    width: 25%;
+    float: left;
+    padding: 25px 7px 0 0;
+}
+
+.welcome1 img {
+    width: 230px;
+    vertical-align: center;
+}
+
+.welcome1 .text {
+    width: 75%;
+    float: right;
+    padding: 7px;
+    text-align: right;
+    color: rgb(220,209,181);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p .welcome1 {
+    padding: 0px;
+}
+
+.proceedings {
+    padding: 0;
+    margin: 0;
+    background: rgb(221,208,181);
+}
+
+.proceedings p {
+    padding: 0;
+    margin: 0;
+}
+
+.proceedings h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.toma {
+    overflow: hidden;
+    padding: 0 2px 50px; 
+    background: rgb(221,208,181);
+}
+
+.item {
+    float: left;
+    width: 50%;  
+    padding: 2px;
+}
+
+h1 {
+    font: 18px/1.8 Arial, sans-serif;
+    font-weight: bold;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    font: 18px/1.8 Impact, sans-serif;
+    color: #564939;
+    display: block;
+    padding: 10px 0;
+    border: 0;
+    transition: 1s;
+    background: rgb(193,169,133);
+}
+
+.btn:hover {
+    background: rgb(126,108,84);
+    color: rgb(193,169,133);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 5px 30px 5px;
+    width: 1145px;
+}
+
+.proceedings .container {
+    padding: 5px 5px 0 5px;
+}
+
+.menu
+{
+    background: rgb(193,169,133);
+    overflow: hidden;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0 auto;
+    border-top: 7px solid rgb(126,108,84);
+}
+
+.menu .container {
+    padding-bottom: 10px;
+}
+
+.menu ul {
+    float: none;
+    margin: 0;
+    list-style: none;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+ 
+.menu li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.menu li a:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+ footer {
+    background: rgb(221,208,181);
+    font-size: 12px;
+    text-align: left;
+    padding: 15px 0 15px 80px;
+ }
+
+ .S1 {
+    background: rgb(221,208,181);
+    margin: 0;
+}
+
+
+/*Оглавление*/
+ul.oglavl {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+    }
+    
+ul.oglavl li {
+    border-bottom: 2px dotted #000; /* Необязателен. Здесь задается толщина, тип и цвет точек */
+    position: relative;
+    padding: 0;
+    margin-bottom: 5px; /* Необязателен. Задается для установки расстояния между блоками li */
+    }
+    
+ul.oglavl li span {
+    background: rgb(221,208,181);; /* Это необходимо, чтобы перекрыть точки фоном */
+    margin: 0;
+    }
+
+ul.oglavl li span.text, ul.oglavl li span.page {
+    bottom: -8px; /* Смещаем значимые блоки, чтобы они перекрыли точки */
+    }
+
+ul.oglavl span.text {
+    position: relative;
+    margin-right:7em; /* Задается чтобы текст не заходил на номера страниц */
+    }
+    
+ul.oglavl span.page {
+    position: absolute;
+    right: 0;
+    padding-left:7px; /* Необязателен. Задается чтобы точки не подходили вплотную к номерам страниц */
+    }
+
+@media (max-width: 2000px) {
+    .welcome {
+    height: 900px;}
+}
+
+@media (max-width: 1700px) {
+    .welcome {
+    height: 860px;}
+}
+
+@media (max-width: 1650px) {
+    .welcome {
+    height: 820px;}
+}
+
+@media (max-width: 1570px) {
+    .welcome {
+    height: 790px;}
+}
+
+@media (max-width: 1500px) {
+    .welcome {
+    height: 750px;}
+}
+
+@media (max-width: 1460px) {
+    .welcome {
+    height: 710px;}
+}
+
+@media (max-width: 1400px) {
+    .welcome {
+    height: 670px;}
+}
+
+@media (max-width: 1350px) {
+    .welcome {
+    height: 630px;}
+}
+
+@media (max-width: 1300px) {
+    .welcome {
+    height: 590px;}
+}
+
+@media (max-width: 1250px) {
+    .welcome {
+    height: 550px;}
+}
+
+@media (max-width: 1200px) {
+    .container {
+    width: 90%;}
+    .welcome {
+    height: 510px;}
+}
+
+    /*если ширина области просмотров не более 1160px*/
+@media (max-width: 1160px) {
+    /*то браузер применяет эти правила*/
+    .welcome {
+    height: 470px;}
+    .menu li a {
+    font-size: 16px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .menu {
+    font-size: 14px;}
+    .welcome1 {
+    height: 150px;}
+    .welcome {
+    height: 430px;}
+}
+
+@media (max-width: 1010px) {
+    .welcome {
+    height: 400px;}
+}
+
+@media (max-width: 960px) {
+    .welcome {
+    height: 390px;}
+}
+
+@media (max-width: 920px) {
+    .welcome1 {
+    overflow: auto;
+    display: block;
+    height: 200px;
+}
+
+    .welcome1 .logo {
+    float: none;
+}
+
+    .welcome1 img {
+    width: 180px;
+}
+
+    .welcome1 .text {
+    float: none;
+    text-align: left;
+}
+}
+
+@media (max-width: 870px) {
+    .welcome {
+    height: 370px;}
+    .menu ul {
+    padding: 0 0 0 100px;}
+}
+
+@media (max-width: 850px) {
+    .welcome {
+    height: 340px;}
+    .welcome1 .text {
+    float: none;}
+    .menu li a {
+    font-size: 14px;
+    }
+}
+
+@media (max-width: 750px) {
+    .welcome {
+    height: 320px;}
+    .menu ul {
+    padding: 0 0 0 50px;}
+
+    .toma {
+    overflow: auto;}
+
+    .item {
+    float: none;
+    display: inline;}
+
+}
+
+@media (max-width: 690px) {
+    .welcome {
+    height: 300px;}
+}
+
+@media (max-width: 650px) {
+    .menu ul {
+    padding: 0 0 0 10px;
+
+}
+    .menu {
+    font-size: 12px;
+}
+    .welcome {
+    height: 340px;
+}
+    .menu li a {
+    font-size: 12px;
+    }
+}
+
+@media (max-width: 560px) {
+    .welcome {
+    height: 280px;}
+    .welcome1 {
+    height: 250px;
+    overflow: auto;}
+    .welcome1 .logo {
+    float: none;
+}
+}
+
+
+@media (max-width: 510px) {
+    .menu ul {
+    padding: 0 0 0 10px;}
+    .welcome {
+    height: 240px;
+}
+.menu li a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+    .welcome {
+    height: 200px;
+}
+}
+
+@media (max-width: 400px) {
+    .welcome {
+    height: 180px;
+}
+}
+
+@media (max-width: 350px) {
+    .welcome {
+    height: 160px;
+}
+}
+
