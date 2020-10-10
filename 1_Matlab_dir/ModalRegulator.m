@@ -58,23 +58,25 @@ size_A = size(A);
 
 sys = ss(A, B, C, D);
 
-% fprintf('\tСобственные числа:\n') my_num = eig(A)
+% fprintf('\tСобственные числа: \n')
+
+my_num = eig(A);
 
 % fprintf('\tМатрицы управляемости U и наблюдаемости V:\n')
 U = ctrb(A,B);
 V = obsv(A,C);
 
-fprintf('\nРанги:\n')
-size(A)
-size(B)
-size(C)
-rank(U)
-rank(V)
+% fprintf('\nРанги:\n')
+% size(A)
+% size(B)
+% size(C)
+% rank(U)
+% rank(V)
 
 
 % Приведение системы к минимальной реализации:
 % M – матрица преобразования координат, sysmin – минимальная реализация системы sys
-[sysmin, M] = minreal(sys);
+[sysmin, M] = minreal(sys)
 
 Ar = M * A * inv(M);
 Br = M * B;
@@ -91,10 +93,10 @@ sE_Ar = (s * E) - Ar;
 Exp_x_nu = zeros(size_A(1),1,'double');
 Exp_x_nu(size_A(1)) = 1;
 
-G_s_nu = vpa(expand(det([[sE_Ar , Exp_x_nu]; [-(s * Cr) , 0]])), 2) % matRezenbroga
-D_s_nu = vpa((expand(det(sE_Ar))), 2)
+% G_s_nu = vpa(expand(det([[sE_Ar , Exp_x_nu]; [-(s * Cr) , 0]])), 2) % matRezenbroga
+% D_s_nu = vpa((expand(det(sE_Ar))), 2)
 
-% W_s_nu_new = vpa(simplify(expand((s * Cr * inv(sE_Ar) * Exp_x_nu))), 2) % Alternative
+W_s_nu_new = vpa(simplify(expand((s * Cr * inv(sE_Ar) * Exp_x_nu))), 2) % Alternative
 
 
 % __________________________________________________________________________________
@@ -104,18 +106,18 @@ D_s_nu = vpa((expand(det(sE_Ar))), 2)
 E = eye(size(sysmin.A)); % Единичная матрица
 sE_A_min = (s * E) - sysmin.A;
 
-G_s_min = vpa(expand(det([[sE_A_min , sysmin.B]; [-sysmin.C , sysmin.D]])), 2) % matRezenbroga
-D_s_min = vpa(expand(det(sE_A_min)), 2)
+% G_s_min = vpa(expand(det([[sE_A_min , sysmin.B]; [-sysmin.C , sysmin.D]])), 2) % matRezenbroga
+% D_s_min = vpa(expand(det(sE_A_min)), 2)
 
-% W_s_min_new = vpa(simplify(expand((sysmin.C * inv(sE_A_min) * sysmin.B))), 2) % Alternative
+W_s_min_new = vpa(simplify(expand((sysmin.C * inv(sE_A_min) * sysmin.B))), 2) % Alternative
 
 % __________________________________________________________________________________
 
 
 % U_nu = -(W_nu / W_min)
-U_nu = vpa((simplify(-1 * ((G_s_nu * D_s_min) / ((D_s_nu * G_s_min))))), 2) % vpa(-1 * (-((1.1*s^2 - 2.5*s + 4.4))/0.9994), 2) % vpa((simplify(-1 * ((G_s_nu * D_s_min) / ((D_s_nu * G_s_min))))), 2)
+% U_nu = vpa((simplify(-1 * ((G_s_nu * D_s_min) / ((D_s_nu * G_s_min))))), 2) % vpa(-1 * (-((1.1*s^2 - 2.5*s + 4.4))/0.9994), 2) % vpa((simplify(-1 * ((G_s_nu * D_s_min) / ((D_s_nu * G_s_min))))), 2)
 
-% U_nu_new =  vpa((simplify(-1 * ((W_s_nu_new) / ((W_s_min_new))))), 2) % Alternative
+U_nu_new =  vpa((simplify(-1 * ((W_s_nu_new) / ((W_s_min_new))))), 2) % Alternative
 
 
 K_nu = zeros(1,size_A(1),'double');
