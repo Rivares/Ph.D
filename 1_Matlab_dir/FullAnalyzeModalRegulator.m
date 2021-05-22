@@ -31,9 +31,9 @@ step(sys_new)
 % bode(sys_new)
 % nyquist(sys_new)
 
-U_new = ctrb(A_new,B_new);
+U_new = ctrb(A_new,B_new)
 
-V_new = obsv(A_new,C_new);
+V_new = obsv(A_new,C_new)
 
 rank(U_new)
 rank(V_new)
